@@ -2,9 +2,10 @@
 This is a Pure Data patch to demonstrate a very simple wavetable synthesizer with 4 voices created using additive synthesis.
 
 To run my patch, open the file called **OPEN_ME.pd**. You can play from a midi keyboard or you can press the "play"
-button to play from my qlist. If the patch doesn't work or if something gets messed up, press the "grand reset"
-button. You are able to change each waveform by drawing on it, or if you go into the subpatch, you can send a
-"sinesum" message to the wavesynth objects. 
+button to play from my qlist. Make sure the volume of the output object is high enough to hear.
+
+If the patch doesn't work or if something gets messed up, press the "grand reset" button. You are able to change each
+waveform by drawing on it, or if you go into the subpatch, you can send a "sinesum" message to the wavesynth objects. 
 
 In order to do a polyphonic synth, I had to make the wavesynth subpatches seperate and they had to use the same
 wavetable and parameters. The only parameter that is variable (i.e. has $0) is the carrier frequency because each
